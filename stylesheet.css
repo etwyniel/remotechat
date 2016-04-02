@@ -1,0 +1,281 @@
+/*Police du titre*/
+@font-face {
+	font-family: perfectdark;
+	src: url("pdark.otf") format("opentype");
+}
+
+/*Couleur de fond, police et alignement du texte*/
+body {
+	background-color: #008CBA;
+	font-family: Raleway;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+/*Police du texte*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+}
+
+/*Liens sont en noir et sans soulignement*/
+body a {
+	color: black;
+	text-decoration: none
+}
+
+/*Bannière du site (image sur fond blanc)*/
+#header {
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	background-image: url(https://saddahaq.blob.core.windows.net/multimedia/16112181-flags-of-the-world.jpg);
+	background-position: center;
+	background-color: white;
+	background-size: 9em;
+	background-repeat: no-repeat;
+	box-shadow: 2px 15px 50px black;
+}
+
+/*Titre du site*/
+h1 {
+	margin: 0;
+	font-size: 7em;
+	position: relative;
+	top: .2em;
+	font-family: perfectdark
+}
+
+/*Sous-titre du site*/
+h2 {
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	background-color: #1A3747;
+	position: relative;
+	top: 0em;
+    	box-shadow: 0px -2px 10px black;
+}
+
+/*Division principale du site*/
+#main {
+	width: 75%;
+	background-color: black;
+	color: white;
+	margin-left: 2em;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-radius: 2px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	text-align: justify;
+	box-shadow: 8px 8px 30px #001C39
+}
+
+/*Liens vers la page de connexion, de création de compte, ou de déconnexion*/
+#log {
+    text-align: right;
+    font-weight: bold;
+    font-size: .8em;
+    padding-right: 3px;
+    position: relative;
+    top: 2em;
+    height: 2em;
+    color:  black;
+    margin-right: .4em
+}
+
+#log a {
+    text-decoration: none;
+    font-weight: bold;
+	  transition-duration: 0.3s;
+	  position: relative;
+	  top: 0;
+}
+#log a:hover {
+	background: black;
+	color: white;
+	border-radius: 3px;
+	padding: 1px 3px;
+	box-shadow: 2px 2px 5px black;
+	top: -0.2em;
+	font-size: 1.1em
+}
+
+
+/*Division pour entrer les identifiants sur n'importe quelle page*/
+#login {
+    transition-timing-function: cubic-bezier(1,.32,.14,1.32);
+    transition-delay: 0.5s;
+    transition-duration: 0.6s;
+    position: fixed;
+    margin-right: 2em;
+    width:  20%;
+    right: -1em;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    width: 14%;
+    padding-left: .8em;
+    padding-bottom: .3em;
+    top: -16em;
+    box-shadow: 2px 10px 20px black;
+}
+#login input[type='submit'] {
+    margin-top: .3em
+}
+
+/*Message de bienvenue sur la page d'accueil*/
+#main h3 {
+	font-family: Tahoma;
+	display: inline-block;
+	font-weight: bold;
+}
+
+/*Barre de liens sous la bannière pour accéder aux différentes pages du site*/
+#links {
+	background-color: #1A3747;
+	border: 1px solid #1A3747;
+	margin-left: 2em;
+	margin-top: 2em;
+	border-radius: 3px;
+	color: white;
+	width: 78%;
+	text-align: center;
+	position: relative
+}
+
+/*Liens de la page*/
+body p a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+
+body p a:visited {
+	color: white
+}
+
+body p a:hover {
+	color: red;
+	font-size: 1.25em;
+}
+
+/*Classe de division*/
+.wrap {
+	background-color: #1A3747;
+	border: 3px solid #1A3747;
+	border-radius: 2px;
+	margin-top: 0;
+	padding-left: 1em;
+	padding-right: 1em
+}
+
+/*Style pour les formulaires de connexion et de création de comptes*/
+form {
+    width:  10em
+}
+form p {
+	color: red; 
+	font-size: .6em
+}
+
+/*Style de la zone de texte des lobbys*/
+#chat {
+    margin-bottom: 0.3em;
+    height: 20em;
+    width: 95%;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px black;
+    padding: 1em;
+}
+
+/*Style de la zone pour taper les messages vers les lobbys*/
+#send {
+    margin-bottom: 0.3em;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px black;
+    padding: 0.5em;
+}
+
+/*Règle pour empêcher l'utilisateur de redimensionner les zones de texte*/
+textarea {
+    resize: none
+}
+
+/*Mention du bas de la page*/
+footer {
+	text-align: center;
+	font-size: .7em;
+	font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.8em
+}
+
+/*Style des messages de la page d'accueil*/
+.message {
+    background-color: #1A3747;
+    border-radius: 10px;
+    padding: .5em;
+    margin-top: 2em
+}
+
+/*Style de la date des messages*/
+.timestamp {
+    font-size: .7em;
+    color: #AAAAAA;
+    width: 100%;
+    height: 0px;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    top: -2em;
+}
+
+/*Style de la zone pour taper les messages vers la page d'accueil*/
+#send_forum {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: inset 2px 2px 5px black;
+    background: white;
+    transition-timing-function: ease-in-out;
+    padding: 5px;
+    position: relative;
+    left: -5px;
+}
+
+/*Style du bouton pour envoyer les messaegs*/
+.fancy_button {
+        transition-duration: 0.4s;
+        background: white;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 5px;
+        font-family: Raleway;
+        transition-timing-function: ease-out;
+}
+.fancy_button:hover {
+	color: white;
+	background: #1A3747;
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+#error {
+	color: red;
+	font-size: 0.7em;
+	text-align: center;
+	background: white;
+	border-radius: 3px;
+	margin: auto;
+}
